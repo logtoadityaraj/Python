@@ -1,3 +1,322 @@
+x = 5
+y = "John"
+print(x)
+print(y)
+
+x = 4       # x is of type int
+x = "Sally" # x is now of type str
+print(x)
+
+Casting
+
+
+x = str(3)    # x will be '3'
+y = int(3)    # y will be 3
+z = float(3)  # z will be 3.0
+
+
+Many Values to Multiple Variables
+x, y, z = "Orange", "Banana", "Cherry"
+print(x)
+print(y)
+print(z)
+
+
+Unpack a Collection
+fruits = ["apple", "banana", "cherry"]
+x, y, z = fruits
+print(x)
+print(y)
+print(z)
+
+
+
+Output Variables
+x = "Python"
+y = "is"
+z = "awesome"
+print(x, y, z)
+
+Output Variables
+x = "Python "
+y = "is "
+z = "awesome"
+print(x + y + z)
+
+Global Variables
+x = "awesome"
+
+def myfunc():
+  print("Python is " + x)
+
+myfunc()
+
+Global Variables
+x = "awesome"
+
+def myfunc():
+  x = "fantastic"
+  print("Python is " + x)
+
+myfunc()
+
+print("Python is " + x)
+
+
+Getting the Data Type
+x = 5
+print(type(x))
+
+
+a = "Hello"
+print(a)
+
+
+Strings are Arrays
+a = "Hello, World!"
+print(a[1])
+
+
+String Length
+a = "Hello, World!"
+print(len(a))
+
+
+Check String
+txt = "The best things in life are free!"
+print("free" in txt)
+
+Check if NOT
+txt = "The best things in life are free!"
+print("expensive" not in txt)
+
+txt = "The best things in life are free!"
+if "expensive" not in txt:
+  print("No, 'expensive' is NOT present.")
+  
+  
+Boolean Values
+print(10 > 9)
+print(10 == 9)
+print(10 < 9)
+
+
+a = 200
+b = 33
+
+if b > a:
+  print("b is greater than a")
+else:
+  print("b is not greater than a")
+  
+  
+  Lists
+  
+  
+Changeable
+The list is changeable, meaning that we can change, add, and remove items in a list after it has been created.
+
+
+Allow Duplicates
+thislist = ["apple", "banana", "cherry", "apple", "cherry"]
+print(thislist)
+
+
+
+List Length
+thislist = ["apple", "banana", "cherry"]
+print(len(thislist))
+
+
+
+
+List is a collection which is ordered and changeable. Allows duplicate members.
+
+
+A list can contain different data types:
+list1 = ["abc", 34, True, 40, "male"]
+
+Access Items
+thislist = ["apple", "banana", "cherry"]
+print(thislist[1])
+
+
+thislist = ["apple", "banana", "cherry"]
+print(thislist[-1])
+
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[2:5])
+
+
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[:4])
+
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[2:])
+
+
+Change Item Value
+
+thislist = ["apple", "banana", "cherry"]
+thislist[1] = "blackcurrant"
+print(thislist)
+
+
+Insert Items
+thislist = ["apple", "banana", "cherry"]
+thislist.insert(2, "watermelon")
+print(thislist)
+
+Append Items
+
+thislist = ["apple", "banana", "cherry"]
+thislist.append("orange")
+print(thislist)
+
+Remove Specified Item
+thislist = ["apple", "banana", "cherry"]
+thislist.remove("banana")
+print(thislist)
+
+
+Loop Through a List
+thislist = ["apple", "banana", "cherry"]
+for x in thislist:
+  print(x)
+  
+thislist = ["apple", "banana", "cherry"]
+for i in range(len(thislist)):
+  print(thislist[i])  
+  
+
+Using a While Loop
+
+thislist = ["apple", "banana", "cherry"]
+i = 0
+while i < len(thislist):
+  print(thislist[i])
+  i = i + 1
+  
+(Remember to increase the index by 1 after each iteration.)
+
+Copy a List
+
+You cannot copy a list simply by typing list2 = list1, because: list2 will only be a reference to list1, and changes made in list1 will automatically also be made in list2.
+
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist.copy()
+print(mylist)
+
+
+
+Join Two Lists
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+
+list3 = list1 + list2
+print(list3)
+
+Python Conditions and If statements
+
+Equals: a == b
+Not Equals: a != b
+Less than: a < b
+Less than or equal to: a <= b
+Greater than: a > b
+Greater than or equal to: a >= b
+
+
+a = 33
+b = 200
+if b > a:
+  print("b is greater than a")
+
+
+Python Loops
+
+while loops
+for loops
+
+The while Loop
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+
+Note: remember to increment i, or else the loop will continue forever.
+
+The break Statement
+i = 1
+while i < 6:
+  print(i)
+  if i == 3:
+    break
+  i += 1
+  
+  
+The continue Statement
+i = 0
+while i < 6:
+  i += 1
+  if i == 3:
+    continue
+  print(i)  
+  
+
+The else Statement
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+else:
+  print("i is no longer less than 6")
+
+Python For Loop
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+  
+  
+Looping Through a String
+
+for x in "banana":
+  print(x)
+
+The break Statement
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+  if x == "banana":
+    break
+    
+The range() Function
+
+for x in range(6):
+  print(x)
+
+for x in range(2, 6):
+  print(x)
+  
+  
+Nested Loops
+
+adj = ["red", "big", "tasty"]
+fruits = ["apple", "banana", "cherry"]
+
+for x in adj:
+  for y in fruits:
+    print(x, y)  
+  
+Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
+Dictionary is a collection which is ordered** and changeable. No duplicate members.
+
+
+
+
+
 from tkinter import *
 import tkinter.messagebox
 tk = Tk()
